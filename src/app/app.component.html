@@ -1,14 +1,14 @@
 <!-- <h1 ngClass="heel">{{name}}</h1/> -->
-<p *ngIf="!var1">{{ name1 }}</p>
-<p *ngIf="var1 == true">{{ name2 }}</p>
+<!-- <p [ngClass]="{ class1: var1 == false }">{{ name1 }}</p>
+<p>{{ name2 }}</p> -->
 <!-- true == true -->
 <!-- <img [src]="img" alt=""> -->
-<ul>
+<!-- <ul>
   <li *ngFor="let item of links">
     <a href="" *ngIf="item != 'About'">{{ item }}</a>
   </li>
 </ul>
-<button (click)="submit()">click here</button>
+<button (click)="submit()">click here</button> -->
 <!-- <input type="text" [(ngModel)]="binding"> -->
 <!-- structrual directive
 *ngIf="expression"
@@ -17,3 +17,17 @@
   <div *ngSwitchCase="expression">output</div>
   <div *ngSwitchDefault>output2</div>
 </div> -->
+<!-- <ul>
+  <li
+    *ngFor="let item of links"
+    [ngClass]="{ changecolor: var1 == true }"
+    (click)="submit()"
+  >
+    {{ item }}
+  </li>
+</ul> -->
+
+
+<app-header></app-header>
+<router-outlet></router-outlet>
+
